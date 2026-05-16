@@ -11,7 +11,9 @@
     "skipLibCheck": true
   },
   "include": [
-    "tests/**/*"
+    "tests/**/*",
+    "pages/**/*",
+    "support/**/*"
   ],
   "exclude": [
     "node_modules"
