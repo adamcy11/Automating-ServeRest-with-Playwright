@@ -10,7 +10,8 @@
     "test:report": "playwright show-report",
     "lint": "eslint .",
     "lint:fix": "eslint . --fix",
-    "format": "prettier --write ."
+    "format": "prettier --write .",
+    "typecheck": "tsc --noEmit"
   },
   "keywords": [],
   "author": "",
