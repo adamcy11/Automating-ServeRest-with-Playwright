@@ -4,7 +4,9 @@ This project is a test automation suite covering **UI and API** layers of the **
 
 This is a learning and portfolio project focused on building practical skills in test automation with Playwright, applying professional-grade practices such as Page Object Model, API testing with request context, Docker isolation, and CI/CD pipelines.
 
-> 🚧 Project currently under development — tests and documentation are being added progressively.
+>  Project currently under development — tests and documentation are being added progressively.
+
+![CI](https://github.com/adamcy11/Automating-ServeRest-with-Playwright/actions/workflows/playwright.yml/badge.svg)
 
 ## Technologies Used
 
