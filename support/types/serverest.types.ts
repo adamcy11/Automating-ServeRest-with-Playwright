@@ -12,3 +12,17 @@ export interface LoginResponse {
   authorization: string
   message: string
 }
+
+export interface Product {
+  nome: string
+  preco: number
+  descricao: string
+  quantidade: number
+}
+
+export interface User {
+  nome: string
+  email: string
+  password: string
+  administrador: string
+}
