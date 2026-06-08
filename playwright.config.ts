@@ -27,7 +27,10 @@ export default defineConfig({
     {
       name: 'ui',
       testDir: './tests/ui',
-      use: { ...devices['Desktop Chrome'] },
+      use: {
+        ...devices['Desktop Chrome'],
+        baseURL: process.env.UI_BASE_URL ?? 'https://front.serverest.dev',
+      },
     },
   ],
 })
