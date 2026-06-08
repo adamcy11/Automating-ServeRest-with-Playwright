@@ -1,12 +1,11 @@
+import { faker } from '@faker-js/faker'
 import type { User } from '../types/serverest.types.js'
 
 export function buildUser(overrides: Partial<User> = {}): User {
-  const unique = `${Date.now()}-${Math.floor(Math.random() * 1000)}`
-
   return {
-    nome: 'Test User',
-    email: `test.user.${unique}@example.com`,
-    password: 'password123',
+    nome: faker.person.fullName(),
+    email: faker.internet.email().toLowerCase(),
+    password: faker.internet.password({ length: 10 }),
     administrador: 'false',
     ...overrides,
   }
