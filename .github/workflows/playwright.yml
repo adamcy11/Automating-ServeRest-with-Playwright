@@ -31,13 +31,15 @@ jobs:
         run: npm run typecheck
 
       - name: Install Playwright Browsers
-        run: npx playwright install --with-deps
+        run: npx playwright install chromium --with-deps
 
       - name: Run Playwright tests
         env:
           BASE_URL: ${{ secrets.BASE_URL }}
           ADMIN_EMAIL: ${{ secrets.ADMIN_EMAIL }}
           ADMIN_PASSWORD: ${{ secrets.ADMIN_PASSWORD }}
+          UI_ADMIN_EMAIL: ${{ secrets.UI_ADMIN_EMAIL }}
+          UI_ADMIN_PASSWORD: ${{ secrets.UI_ADMIN_PASSWORD }}
         run: npx playwright test
 
       - name: Upload report
