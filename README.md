@@ -1,10 +1,14 @@
 # ServeRest — UI + API Test Automation with Playwright
 
-This project automates the **ServeRest** application covering both API and UI layers with a complete, production-grade test architecture. It validates REST endpoints and browser flows through isolated, reproducible tests powered by Docker and TypeScript.
+This project automates the **ServeRest** application covering both API and UI layers.
+It validates REST endpoints and browser flows through isolated, reproducible tests
+powered by Docker and TypeScript.
 
-Continuous Integration is configured with **GitHub Actions**, running all tests automatically on every push with ServeRest served as a Docker service container.
+Continuous Integration is configured with **GitHub Actions**, running all tests
+automatically on every push with ServeRest served as a Docker service container.
 
-This is a portfolio and learning project aimed at applying professional-grade practices such as Page Object Model, API request contexts, fixture-based authentication, Playwright project dependency pattern, and CI/CD pipelines.
+This is a portfolio project focused on applying real-world practices: Page Object Model,
+API request contexts, fixture-based authentication, and CI/CD pipelines.
 
 ![CI](https://github.com/adamcy11/Automating-ServeRest-with-Playwright/actions/workflows/playwright.yml/badge.svg)
 
@@ -29,7 +33,7 @@ This is a portfolio and learning project aimed at applying professional-grade pr
 - **Assertion methods in Page Object** — `checkHomePage()`, `checkEmailBlankError()`, `checkInvalidCredentialsError()` encapsulate assertions inside the page class following a single-responsibility approach
 - **Constants for messages** — UI error strings centralized in `support/constants/messages.ts`, decoupled from test logic
 - **Data Factories** — `buildUser()` and `buildProduct()` generate realistic random data per execution using Faker.js to avoid collisions and simulate real-world usage
-- **Environment Variables** — credentials managed via `.env` locally and GitHub Secrets in CI, following 12-Factor App principles
+- **Environment Variables** — credentials managed via `.env` locally and GitHub Secrets in CI App principles
 
 ## CI/CD Pipeline
 
