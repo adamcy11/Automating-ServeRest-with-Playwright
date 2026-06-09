@@ -1,4 +1,4 @@
-import { test, expect } from '../../support/fixtures/auth.fixture.js'
+import { test, expect } from '../../support/fixtures/api.fixture.js'
 import { buildUser } from '../../support/data/user.js'
 import type { CreateUserResponse, ListUsersResponse } from '../../support/types/serverest.types.js'
 

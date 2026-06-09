@@ -5,8 +5,6 @@ dotenv.config()
 
 export default defineConfig({
   testDir: './tests',
-  globalSetup: './support/global-setup.ts',
-  globalTeardown: './support/global-teardown.ts',
   fullyParallel: true,
   forbidOnly: !!process.env.CI,
   retries: process.env.CI ? 2 : 0,
@@ -21,8 +19,20 @@ export default defineConfig({
 
   projects: [
     {
+      name: 'api-setup',
+      testDir: './support',
+      testMatch: /global-setup\.ts/,
+    },
+    {
       name: 'api',
       testDir: './tests/api',
+      dependencies: ['api-setup'],
+      teardown: 'api-teardown',
+    },
+    {
+      name: 'api-teardown',
+      testDir: './support',
+      testMatch: /global-teardown\.ts/,
     },
     {
       name: 'ui',
