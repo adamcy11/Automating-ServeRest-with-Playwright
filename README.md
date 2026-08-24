@@ -10,7 +10,7 @@ automatically on every push with ServeRest served as a Docker service container.
 This is a portfolio project focused on applying real-world practices: Page Object Model,
 API request contexts, fixture-based authentication, and CI/CD pipelines.
 
-![CI](https://github.com/adamcy11/Automating-ServeRest-with-Playwright/actions/workflows/playwright.yml/badge.svg)
+[![CI](https://github.com/adamcy11/Automating-ServeRest-with-Playwright/actions/workflows/playwright.yml/badge.svg)](https://github.com/adamcy11/Automating-ServeRest-with-Playwright/actions/workflows/playwright.yml)
 
 ## Technologies Used
 
@@ -33,7 +33,7 @@ API request contexts, fixture-based authentication, and CI/CD pipelines.
 - **Assertion methods in Page Object** — `checkHomePage()`, `checkEmailBlankError()`, `checkInvalidCredentialsError()` encapsulate assertions inside the page class following a single-responsibility approach
 - **Constants for messages** — UI error strings centralized in `support/constants/messages.ts`, decoupled from test logic
 - **Data Factories** — `buildUser()` and `buildProduct()` generate realistic random data per execution using Faker.js to avoid collisions and simulate real-world usage
-- **Environment Variables** — credentials managed via `.env` locally and GitHub Secrets in CI App principles
+- **Environment Variables** — credentials managed via `.env` locally and GitHub Secrets in CI
 
 ## CI/CD Pipeline
 
