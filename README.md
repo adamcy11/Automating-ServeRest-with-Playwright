@@ -14,16 +14,16 @@ API request contexts, fixture-based authentication, and CI/CD pipelines.
 
 ## Technologies Used
 
-| Tool | Purpose |
-|---|---|
-| Playwright 1.60 | API and UI test framework |
-| TypeScript | Type-safe test language |
-| Node.js 22 | Runtime |
-| Docker | Isolated ServeRest environment |
-| GitHub Actions | CI/CD pipeline |
-| Faker.js | Dynamic test data generation |
-| ESLint + Prettier | Code quality and formatting |
-| dotenv | Environment variable management |
+| Tool              | Purpose                         |
+| ----------------- | ------------------------------- |
+| Playwright 1.60   | API and UI test framework       |
+| TypeScript        | Type-safe test language         |
+| Node.js 22        | Runtime                         |
+| Docker            | Isolated ServeRest environment  |
+| GitHub Actions    | CI/CD pipeline                  |
+| Faker.js          | Dynamic test data generation    |
+| ESLint + Prettier | Code quality and formatting     |
+| dotenv            | Environment variable management |
 
 ## Architecture & Patterns
 
@@ -140,6 +140,7 @@ npm run test:report
 ## Test Scenarios
 
 **API — /usuarios**
+
 - Create a user successfully with valid data
 - Reject creation with a duplicate email
 - Reject creation when required fields are missing
@@ -155,6 +156,7 @@ npm run test:report
 - Return success when deleting a non-existent ID
 
 **UI — Login**
+
 - Login successfully with valid credentials
 - Logout successfully
 - Show error when email is empty
